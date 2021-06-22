@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "sourcesanspro";
+  src: url("../font/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+	font-size: 16px;
+	color: #000000;
+	background-color: #EEFBFB;
+	font-family: sourcesanspro, sans-serif;
+}
+.navbar, .navbar-light {
+	background-color: #007CC7;
+}
+.brandd {
+	
+	margin: 10px;
+	color: #EEFBFB;
+}
