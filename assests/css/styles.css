@@ -4,17 +4,169 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "patrikhand";
+  src: url("../font/PatrickHand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
 	font-size: 16px;
 	color: #000000;
 	background-color: #EEFBFB;
-	font-family: sourcesanspro, sans-serif;
+	font-family: patrikhand, sans-serif;
 }
-.navbar, .navbar-light {
+
+.navbar, .navbar-expand-lg, .navbar-light, .bg-light {
 	background-color: #007CC7;
 }
-.brandd {
-	
-	margin: 10px;
+
+h1 {	
+	margin: 15px;
 	color: #EEFBFB;
+	font-size: 2em;
+	text-shadow: 1px 1px 3px #515151;
+	text-transform: uppercase;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+.navbar #navbarNavAltMarkup .navbar-nav a{
+	color: #ffffff;
+}
+
+.navbar #navbarNavAltMarkup .navbar-nav a:hover {
+	background-color: #ffffff;
+	color: #007CC7;
+}
+
+.navbar-light .navbar-toggler {
+	border: 1px solid #ffffff; !important
+}
+
+.navbar-light .navbar-toggler:hover {
+	background-color: #ffffff;
+}
+
+.container .jumbotron {
+/*		background: url(../photos/600px.png) no-repeat;
+		height: 350px;*/
+		box-shadow: 0 0 25px #3F0C1F;
+		border: 2px solid #3F0C1F;
+		padding: 0px;
+	}
+
+#stuff-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+
+#stuff-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #515151;
+}
+
+#stuff-tile{
+	background: url(../photos/1.png);
+	background-position: center;
+}
+
+#specials-tile {
+	background: url(../photos/2.png);
+	background-position: center;
+}
+
+#stuff-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+.panel-footer {
+	background-color: #007CC7;
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	border-top: 0;
+}
+
+.panel-footer div .row{
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+
+#hours, #address {
+	line-height: 2;
+	text-align: left;
+}
+
+#hours > span, #address > span {
+	font-size: 1.3em;
+	text-align: left;
+	margin: 0;
+}
+.copyr {
+	color: #adadad;
+}
+
+footer .container .row section span {
+	margin: 15px;
+	color: #EEFBFB;
+	font-size: 2em;
+	text-shadow: 1px 1px 3px #515151;
+	text-transform: uppercase;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.container .jumbotron {
+		background: url(../photos/600px.png) no-repeat;
+		background-position: center;
+		height: 350px;
+	}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.container .jumbotron {
+		background: url(../photos/800px.png) no-repeat;
+		background-position: center;
+		height: 432px;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.container .jumbotron {
+		background: url(../photos/1000px.png) no-repeat;
+		background-position: center;
+		height: 558px;
+	}
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.container .jumbotron {
+		background: url(../photos/1200px.png) no-repeat;
+		background-position: center;
+		height: 675px;
+	}
+}
+#main-content {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
